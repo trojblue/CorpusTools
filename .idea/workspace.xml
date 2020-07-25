@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4f6c16c6-1f15-4dcd-be4d-0daf3155419a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hi.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1f93EN4VHyHsjnTKyqP9vNGOxPz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\APP\0CSC\corpusTool\data" />
+      <recent name="D:\APP\0CSC\corpusTool" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.playground">
+    <configuration name="corpus_tool" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="corpusTool" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/corpus_tool.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="playground" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="corpusTool" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/playground.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.playground" />
+        <item itemvalue="Python.corpus_tool" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4f6c16c6-1f15-4dcd-be4d-0daf3155419a" name="Default Changelist" comment="" />
+      <created>1595616369089</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595616369089</updated>
+      <workItem from="1595616370373" duration="3000" />
+      <workItem from="1595616393347" duration="450000" />
+      <workItem from="1595616855608" duration="11653000" />
+      <workItem from="1595717143028" duration="61000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="693" y="248" key="CommitChangelistDialog2" timestamp="1595717227136">
+      <screen x="71" y="0" width="2123" height="1234" />
+    </state>
+    <state x="693" y="248" key="CommitChangelistDialog2/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595717227136" />
+    <state width="1427" height="346" key="GridCell.Tab.0.bottom" timestamp="1595686180879">
+      <screen x="71" y="0" width="2123" height="1234" />
+    </state>
+    <state width="1427" height="346" key="GridCell.Tab.0.bottom/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595686180879" />
+    <state width="1427" height="346" key="GridCell.Tab.0.center" timestamp="1595686180879">
+      <screen x="71" y="0" width="2123" height="1234" />
+    </state>
+    <state width="1427" height="346" key="GridCell.Tab.0.center/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595686180879" />
+    <state width="1427" height="346" key="GridCell.Tab.0.left" timestamp="1595686180879">
+      <screen x="71" y="0" width="2123" height="1234" />
+    </state>
+    <state width="1427" height="346" key="GridCell.Tab.0.left/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595686180879" />
+    <state width="1427" height="346" key="GridCell.Tab.0.right" timestamp="1595686180879">
+      <screen x="71" y="0" width="2123" height="1234" />
+    </state>
+    <state width="1427" height="346" key="GridCell.Tab.0.right/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595686180879" />
+    <state width="2080" height="362" key="GridCell.Tab.1.bottom" timestamp="1595634107617">
+      <screen x="71" y="0" width="2123" height="1234" />
+    </state>
+    <state width="2080" height="362" key="GridCell.Tab.1.bottom/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595634107617" />
+    <state width="2080" height="362" key="GridCell.Tab.1.center" timestamp="1595634107617">
+      <screen x="71" y="0" width="2123" height="1234" />
+    </state>
+    <state width="2080" height="362" key="GridCell.Tab.1.center/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595634107617" />
+    <state width="2080" height="362" key="GridCell.Tab.1.left" timestamp="1595634107617">
+      <screen x="71" y="0" width="2123" height="1234" />
+    </state>
+    <state width="2080" height="362" key="GridCell.Tab.1.left/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595634107617" />
+    <state width="2080" height="362" key="GridCell.Tab.1.right" timestamp="1595634107617">
+      <screen x="71" y="0" width="2123" height="1234" />
+    </state>
+    <state width="2080" height="362" key="GridCell.Tab.1.right/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595634107617" />
+    <state x="634" y="259" key="SettingsEditor" timestamp="1595620812070">
+      <screen x="71" y="0" width="2123" height="1234" />
+    </state>
+    <state x="634" y="259" key="SettingsEditor/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595620812070" />
+    <state x="1075" y="441" key="com.intellij.ide.util.TipDialog" timestamp="1595616857639">
+      <screen x="71" y="0" width="2123" height="1234" />
+    </state>
+    <state x="1075" y="441" key="com.intellij.ide.util.TipDialog/71.0.2123.1234/3906.209.1854.1080@71.0.2123.1234" timestamp="1595616857639" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/corpus_tool.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/corpus_tool.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/corpusTool$corpus_tool.coverage" NAME="corpus_tool Coverage Results" MODIFIED="1595685947931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/corpusTool$playground.coverage" NAME="playground Coverage Results" MODIFIED="1595686180872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
