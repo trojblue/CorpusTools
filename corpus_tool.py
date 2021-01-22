@@ -47,8 +47,6 @@ def delete_qq_img(file_name: str, match_word: str):
     lines = a_file.readlines()
     a_file.close()
 
-    backup_file(file_name)
-
     new_file = open(full_out_path, "w", encoding='UTF-8')
 
     for i in range(len(lines)):
@@ -64,13 +62,14 @@ def delete_qq_img2(file_name: str, match_word: str):
     """测试功能
     """
     full_path = os.path.join(DATA_PATH, file_name)
+    full_out_path = os.path.join(OUTPUT_PATH, file_name)
     a_file = open(full_path, "r", encoding='UTF-8')
     lines = a_file.readlines()
     a_file.close()
 
-    backup_file(file_name)
+    # backup_file(file_name)
 
-    new_file = open(full_path, "w", encoding='UTF-8')
+    new_file = open(full_out_path, "w", encoding='UTF-8')
 
     re_string = r'^(?:[2-9]\d\d\d)-(?:1[012]|0?[1-9])?-(?:31(?!.(?:0?[2469]|11))|(?:30|29)(?!.0?2)|29(?=.0?2.(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00)))(?:T))|(?:2[0-8]|1\d|0?[1-9])).*'
 
@@ -93,5 +92,5 @@ def delete_qq_img2(file_name: str, match_word: str):
     new_file.close()
 
 if __name__ == '__main__':
-    delete_qq_img2("wjr.txt", "d")
+    delete_qq_img("wjr.txt", "d")
     # backup_file("sample.txt")

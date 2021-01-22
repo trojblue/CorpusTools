@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f6c16c6-1f15-4dcd-be4d-0daf3155419a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/class.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/corpusTool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/corpusTool.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/class.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/corpus_tool.py" beforeDir="false" afterPath="$PROJECT_DIR$/corpus_tool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playground.py" beforeDir="false" afterPath="$PROJECT_DIR$/playground.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +35,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -45,7 +45,7 @@
       <recent name="D:\APP\0CSC\corpusTool" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.corpus_tool">
+  <component name="RunManager" selected="Python.playground">
     <configuration name="corpus_tool" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="corpusTool" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,8 +92,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.corpus_tool" />
         <item itemvalue="Python.playground" />
+        <item itemvalue="Python.corpus_tool" />
       </list>
     </recent_temporary>
   </component>
@@ -112,6 +112,7 @@
       <workItem from="1595616855608" duration="11653000" />
       <workItem from="1595717143028" duration="61000" />
       <workItem from="1611315707025" duration="1168000" />
+      <workItem from="1611317043413" duration="2155000" />
     </task>
     <servers />
   </component>
@@ -119,35 +120,77 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1611316703815">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="724" y="420" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611317172687">
+      <screen x="83" y="0" width="2477" height="1440" />
+    </state>
+    <state x="724" y="420" key="#com.intellij.execution.impl.EditConfigurationsDialog/83.0.2477.1440/1111.-1080.1839.1080@83.0.2477.1440" timestamp="1611317172687" />
+    <state x="968" y="421" key="#corpus_tool" timestamp="1611317190125">
+      <screen x="83" y="0" width="2477" height="1440" />
+    </state>
+    <state x="968" y="421" key="#corpus_tool/83.0.2477.1440/1111.-1080.1839.1080@83.0.2477.1440" timestamp="1611317190125" />
+    <state width="2433" height="430" key="GridCell.Tab.0.bottom" timestamp="1611318997447">
+      <screen x="83" y="0" width="2477" height="1440" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611316703815" />
-    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1611316703814">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="2433" height="430" key="GridCell.Tab.0.bottom/83.0.2477.1440/1111.-1080.1839.1080@83.0.2477.1440" timestamp="1611318997447" />
+    <state width="2433" height="430" key="GridCell.Tab.0.center" timestamp="1611318997447">
+      <screen x="83" y="0" width="2477" height="1440" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1611316703814" />
-    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1611316703814">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="2433" height="430" key="GridCell.Tab.0.center/83.0.2477.1440/1111.-1080.1839.1080@83.0.2477.1440" timestamp="1611318997447" />
+    <state width="2433" height="430" key="GridCell.Tab.0.left" timestamp="1611318997447">
+      <screen x="83" y="0" width="2477" height="1440" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1611316703814" />
-    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1611316703814">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="2433" height="430" key="GridCell.Tab.0.left/83.0.2477.1440/1111.-1080.1839.1080@83.0.2477.1440" timestamp="1611318997447" />
+    <state width="2433" height="430" key="GridCell.Tab.0.right" timestamp="1611318997447">
+      <screen x="83" y="0" width="2477" height="1440" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1611316703814" />
+    <state width="2433" height="430" key="GridCell.Tab.0.right/83.0.2477.1440/1111.-1080.1839.1080@83.0.2477.1440" timestamp="1611318997447" />
+    <state width="2433" height="430" key="GridCell.Tab.1.bottom" timestamp="1611318998181">
+      <screen x="83" y="0" width="2477" height="1440" />
+    </state>
+    <state width="2433" height="430" key="GridCell.Tab.1.bottom/83.0.2477.1440/1111.-1080.1839.1080@83.0.2477.1440" timestamp="1611318998181" />
+    <state width="2433" height="430" key="GridCell.Tab.1.center" timestamp="1611318998181">
+      <screen x="83" y="0" width="2477" height="1440" />
+    </state>
+    <state width="2433" height="430" key="GridCell.Tab.1.center/83.0.2477.1440/1111.-1080.1839.1080@83.0.2477.1440" timestamp="1611318998181" />
+    <state width="2433" height="430" key="GridCell.Tab.1.left" timestamp="1611318998181">
+      <screen x="83" y="0" width="2477" height="1440" />
+    </state>
+    <state width="2433" height="430" key="GridCell.Tab.1.left/83.0.2477.1440/1111.-1080.1839.1080@83.0.2477.1440" timestamp="1611318998181" />
+    <state width="2433" height="430" key="GridCell.Tab.1.right" timestamp="1611318998181">
+      <screen x="83" y="0" width="2477" height="1440" />
+    </state>
+    <state width="2433" height="430" key="GridCell.Tab.1.right/83.0.2477.1440/1111.-1080.1839.1080@83.0.2477.1440" timestamp="1611318998181" />
+    <state x="770" y="410" key="SettingsEditor" timestamp="1611317204401">
+      <screen x="83" y="0" width="2477" height="1440" />
+    </state>
+    <state x="770" y="410" key="SettingsEditor/83.0.2477.1440/1111.-1080.1839.1080@83.0.2477.1440" timestamp="1611317204401" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/corpus_tool.py</url>
-          <line>51</line>
+          <line>49</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/corpus_tool.py</url>
-          <line>78</line>
+          <line>77</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/classes.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/classes.py</url>
+          <line>90</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -155,6 +198,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/corpusTool$playground.coverage" NAME="playground Coverage Results" MODIFIED="1595686180872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/corpusTool$corpus_tool.coverage" NAME="corpus_tool Coverage Results" MODIFIED="1595685947931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CorpusTools$corpus_tool.coverage" NAME="corpus_tool Coverage Results" MODIFIED="1611316703805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CorpusTools$playground.coverage" NAME="playground Coverage Results" MODIFIED="1611318997338" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CorpusTools$corpus_tool.coverage" NAME="corpus_tool Coverage Results" MODIFIED="1611317259958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
