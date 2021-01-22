@@ -3,23 +3,23 @@ import shutil
 from datetime import datetime
 import re
 
-DATA_PATH = "./data"
-BACKUP_PATH = "./backup"
+DATA_PATH = "./src"
+OUTPUT_PATH = "output"
 
-def backup_file(file_name):
-    """每次操作复制一份原文件到 BACKUP_PATH文件夹, 添加日期到文件名防止重复
-    >>> backup_file("sample.txt")
-    """
-    if not os.path.exists(BACKUP_PATH):
-        os.makedirs(BACKUP_PATH)
-
-    og_path = os.path.join(DATA_PATH, file_name)
-    split_name = os.path.splitext(file_name)
-    curr_time = datetime.now().strftime(" %m%d-%H%M%S")
-    new_file_name = os.path.join(BACKUP_PATH, split_name[0] + curr_time + split_name[1])
-
-    shutil.copy2(og_path, new_file_name)
-    print("Backup created: " + new_file_name)
+# def backup_file(file_name):
+#     """每次操作复制一份原文件到 BACKUP_PATH文件夹, 添加日期到文件名防止重复
+#     >>> backup_file("sample.txt")
+#     """
+#     if not os.path.exists(BACKUP_PATH):
+#         os.makedirs(BACKUP_PATH)
+#
+#     og_path = os.path.join(DATA_PATH, file_name)
+#     split_name = os.path.splitext(file_name)
+#     curr_time = datetime.now().strftime(" %m%d-%H%M%S")
+#     new_file_name = os.path.join(BACKUP_PATH, split_name[0] + curr_time + split_name[1])
+#
+#     shutil.copy2(og_path, new_file_name)
+#     print("Backup created: " + new_file_name)
 
 
 def delete_lines_match(file_name: str, match_word: str):
@@ -42,13 +42,14 @@ def delete_qq_img(file_name: str, match_word: str):
     """删掉qq[图片] 以及发送人的信息
     """
     full_path = os.path.join(DATA_PATH, file_name)
+    full_out_path = os.path.join(OUTPUT_PATH, file_name)
     a_file = open(full_path, "r", encoding='UTF-8')
     lines = a_file.readlines()
     a_file.close()
 
     backup_file(file_name)
 
-    new_file = open(full_path, "w", encoding='UTF-8')
+    new_file = open(full_out_path, "w", encoding='UTF-8')
 
     for i in range(len(lines)):
         if lines[i].strip("\n") == "[图片]":
