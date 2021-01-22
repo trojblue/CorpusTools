@@ -40,7 +40,7 @@ class msgParser():
                 continue
             else:
                 # text
-                msg_str = curr_line
+                msg_str = curr
 
             meta = lines[i][:-1]
             msg = lines[i+1][:-1]
