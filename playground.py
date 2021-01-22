@@ -31,15 +31,33 @@ def try_regex():
             print(string, "no")
 
 
+def try_datetime():
+    import datetime
+
+    date_time_str = '2018-06-29 08:15:27'
+    date_time_obj = datetime.datetime.strptime(date_time_str, '%Y-%m-%d %H:%M:%S')
+
+    def show_time(date_obj):
+        return date_obj.strftime('%Y-%m-%d %H:%M:%S')
+
+    s = show_time(date_time_obj)
+
+    print('Date:', date_time_obj.date())
+    print('Time:', date_time_obj.time())
+    print('Date-time:', date_time_obj)
+
 
 def try_msgParse():
-    file_name ="wjr.txt"
+    file_name = "wjr.txt"
     parser = msgParser(file_name)
+
+    print("D")
 
 
 
 
 if __name__ == '__main__':
     # print(8%2, 9%2)
+    # try_datetime()
     try_msgParse()
-    try_regex()
+    # try_regex()
