@@ -50,6 +50,10 @@ class msgParser():
 
                 meta_line = i
 
+    def to_csv(self):
+        """输出为csv"""
+        pass
+
 
 
 class singleMsg():
