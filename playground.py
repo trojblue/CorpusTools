@@ -42,4 +42,4 @@ def try_msgParse():
 if __name__ == '__main__':
     # print(8%2, 9%2)
     try_msgParse()
-    # try_regex()
+    try_regex()

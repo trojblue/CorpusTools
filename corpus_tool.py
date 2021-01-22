@@ -92,5 +92,5 @@ def delete_qq_img2(file_name: str, match_word: str):
     new_file.close()
 
 if __name__ == '__main__':
-    delete_qq_img("wjr.txt", "d")
+    delete_qq_img2("wjr.txt", "d")
     # backup_file("sample.txt")
