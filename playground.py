@@ -1,4 +1,5 @@
 import re
+from classes import *
 
 def try_list():
     lst = ["one", "two", "three"]
@@ -31,5 +32,14 @@ def try_regex():
 
 
 
+def try_msgParse():
+    file_name ="wjr.txt"
+    parser = msgParser(file_name)
+
+
+
+
 if __name__ == '__main__':
-    try_regex()
+    # print(8%2, 9%2)
+    try_msgParse()
+    # try_regex()
