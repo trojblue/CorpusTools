@@ -2,6 +2,7 @@ import os
 import shutil
 from datetime import datetime
 import re
+import csv
 
 DATA_PATH = "./src"
 OUTPUT_PATH = "output"
@@ -52,7 +53,15 @@ class msgParser():
 
     def to_csv(self):
         """输出为csv"""
-        pass
+        with open("test.csv", "w", encoding='utf-8') as csvfile:
+            writer = csv.writer(csvfile)
+
+            # 先写入columns_name
+            writer.writerow(["date", "sender", "message"])
+
+            for i in self.msg_list:
+                writer.writerow([i.date, i.sender, i.msg])
+
 
 
 
@@ -76,7 +85,7 @@ class singleMsg():
         """
         date_time_obj = parse_time(meta[:19])
         self.date = date_time_obj
-        self.sender = meta[20:]
+        self.sender = meta[19:]
 
 
 def is_meta(line: str):
@@ -98,3 +107,10 @@ def parse_time(date_string: str):
 
 def show_time(date_obj):
     return date_obj.strftime('%Y-%m-%d %H:%M:%S')
+
+
+if __name__ == '__main__':
+    parser = msgParser('曜(1127717844).txt')
+    parser.to_csv()
+
+    print("Done")
