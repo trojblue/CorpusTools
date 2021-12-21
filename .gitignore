@@ -1,5 +1,5 @@
 output/
 data/
-src/ 
+bin/
 .idea/
 __pychache__/
