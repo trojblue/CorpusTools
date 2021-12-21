@@ -72,6 +72,7 @@ def store_info(raw_str:str):
 
     ENTRY_DICT[my_dict["avatar_id"]] = my_dict
     pickle.dump(ENTRY_DICT, open(pickle_file, "wb"))
+    print("写入成功")
 
 
 
