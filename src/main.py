@@ -1,6 +1,6 @@
 import argparse
 import time, sys, schedule
-import handle_VRCAvatar
+import handler_VRCAvatar
 
 def do_parse():
     """
@@ -23,22 +23,24 @@ def do_parse():
     if args.copy:
 
         print("实时复制到剪贴板")
+        handler_VRCAvatar.parse(mode="copy")
 
 
     elif args.text:
 
-        print("保存到文件")
+        print("保存到文件, 没实现呢")
 
 
     elif args.store:
-        print("存储")
+        print("存储到本地文件")
+        handler_VRCAvatar.parse(mode="store")
 
 
     else:
         print("没输入参数, 输入[-h]查看帮助")
 
 
-    handle_VRCAvatar.parse()
+
 
 
 
