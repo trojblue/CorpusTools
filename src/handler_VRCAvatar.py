@@ -16,8 +16,9 @@ standalonewindows
 
 
 pickle_file = "../bin/avatar_entries.pickle"
-entry_dict = pickle.load(open(pickle_file, "rb"))
-print("已加载", len(entry_dict.keys()), "条记录")
+ENTRY_DICT = pickle.load(open(pickle_file, "rb"))
+CATEGORY = "default"
+print("已加载", len(ENTRY_DICT.keys()), "条记录")
 
 
 def get_avtr_id(raw_str:str):
@@ -52,6 +53,7 @@ def enumerate_dict(raw_str:str):
     my_dict["avatar_name"] = raw_str[curr_avatar_name + len("Avatar name: "): curr_asset_url]
     my_dict["asset_url"] = raw_str[curr_asset_url+ len("Asset url: "):curr_status]
     my_dict["status"] = raw_str[curr_status+ len("Release status: "):curr_version]
+    my_dict["category"] = CATEGORY
 
     version_str_raw = raw_str[curr_version+ len("Version: "):]
     my_dict["version"] = version_str_raw[: version_str_raw.index("------")]
@@ -64,17 +66,22 @@ def store_info(raw_str:str):
     my_dict = enumerate_dict(raw_str)
 
     # TODO: 更新信息功能
-    if (my_dict["avatar_id"]) in entry_dict:
+    if (my_dict["avatar_id"]) in ENTRY_DICT:
         print("记录已经存在")
         return
 
-    entry_dict[my_dict["avatar_id"]] = my_dict
-    pickle.dump(entry_dict, open(pickle_file, "wb" ))
+    ENTRY_DICT[my_dict["avatar_id"]] = my_dict
+    pickle.dump(ENTRY_DICT, open(pickle_file, "wb"))
 
 
 
 def parse(mode:str):
 # 从main转到vrcAvatar
+    global CATEGORY
+    category_prompt = input("输入类别名称: waifu, erp, creature, small, funny, [default]")
+    if category_prompt:
+        CATEGORY = category_prompt
+
     if (mode == "copy"):
         while(True):
             new_input = input("黏贴内容: ")
