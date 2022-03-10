@@ -1,5 +1,6 @@
 import re
 from handle_qq import *
+from controller import *
 
 def try_list():
     lst = ["one", "two", "three"]
@@ -55,5 +56,8 @@ def try_msgParse():
 if __name__ == '__main__':
     # print(8%2, 9%2)
     # try_datetime()
-    try_msgParse()
+    # try_msgParse()
     # try_regex()
+    get_URL_from_line("test test http://asd.com/")
+
+

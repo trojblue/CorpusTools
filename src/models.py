@@ -1,7 +1,5 @@
-import os
+import os, pyperclip, pickle, re
 from typing import *
-import pyperclip
-import pickle
 import pandas as pd
 
 
@@ -10,6 +8,9 @@ OUTPUT_DIR = "../out"
 
 AVATAR_PICKLE = "../bin/avatar_entries.pickle"
 
+
+# re相关
+re_URL = "(?P<url>https?://[^\s]+)"
 
 
 
