@@ -1,6 +1,4 @@
-from typing import *
-import pyperclip
-import pickle
+from models import *
 
 sample_text = """---------------------------------------------------------------------------------------------------------------------
 Author: ☠☦☣❖
@@ -21,7 +19,7 @@ try:
 except Exception:
     yn = input("load出错, 是否创建新文件? (y/n)")
     if (yn == "y" or yn == "Y"):
-        pass # 覆写文件
+        pass  # 覆写文件
     else:
         exit(1)
 
@@ -29,20 +27,20 @@ CATEGORY = "default"
 print("已加载", len(ENTRY_DICT.keys()), "条记录")
 
 
-def get_avtr_id(raw_str:str):
+def get_avtr_id(raw_str: str):
     """输入notorious信息, 返回avtr_xxx
     """
     start_string = "Avatar id: "
     end_string = "Avatar name:"
     # print(raw_str)
 
-    id_index = raw_str.index(start_string)+len("Avatar id: ")
+    id_index = raw_str.index(start_string) + len("Avatar id: ")
     id_end = raw_str[id_index:].index(end_string) + id_index
     actual_id = raw_str[id_index: id_end]
     return actual_id
 
 
-def enumerate_dict(raw_str:str):
+def enumerate_dict(raw_str: str):
     """生成单个dict"""
     my_dict = dict()
     curr_name = raw_str.index("Author: ")
@@ -55,22 +53,21 @@ def enumerate_dict(raw_str:str):
     curr_version = raw_str.index("Version: ")
 
     my_dict["avatar_name"] = raw_str[curr_avatar_name + len("Avatar name: "): curr_asset_url]
-    my_dict["avatar_id"] = raw_str[curr_avatar_id+ len("Avatar id: "):curr_avatar_name]
+    my_dict["avatar_id"] = raw_str[curr_avatar_id + len("Avatar id: "):curr_avatar_name]
     my_dict["category"] = CATEGORY
-
 
     my_dict["name"] = raw_str[curr_name + len("Author: "):curr_usr_id]
     my_dict["user_id"] = raw_str[curr_usr_id + len("ID: "):curr_img_url]
-    my_dict["img_url"] = raw_str[curr_img_url+ len("Image URL: "):curr_avatar_id]
-    my_dict["asset_url"] = raw_str[curr_asset_url+ len("Asset url: "):curr_status]
-    my_dict["status"] = raw_str[curr_status+ len("Release status: "):curr_version]
+    my_dict["img_url"] = raw_str[curr_img_url + len("Image URL: "):curr_avatar_id]
+    my_dict["asset_url"] = raw_str[curr_asset_url + len("Asset url: "):curr_status]
+    my_dict["status"] = raw_str[curr_status + len("Release status: "):curr_version]
 
-
-    version_str_raw = raw_str[curr_version+ len("Version: "):]
+    version_str_raw = raw_str[curr_version + len("Version: "):]
     my_dict["version"] = version_str_raw[: version_str_raw.index("------")]
     return my_dict
 
-def store_info(raw_str:str):
+
+def store_info(raw_str: str):
     """
     需要事先存在avatar_entries.pickle, 没写exception
     my_dict: 格式见enumerate_dict()
@@ -84,20 +81,25 @@ def store_info(raw_str:str):
 
     ENTRY_DICT[my_dict["avatar_id"]] = my_dict
     pickle.dump(ENTRY_DICT, open(pickle_file, "wb"))
-    print("[%s] 写入成功" %CATEGORY)
+    print("[%s] 写入成功" % CATEGORY)
     return my_dict
 
 
-
-def parse(mode:str):
-# 从main转到vrcAvatar
-    global CATEGORY
+def get_category():
     category_prompt = input("输入类别名称: waifu, erp, creature, small, funny, [default]")
     if category_prompt:
-        CATEGORY = category_prompt
+        return category_prompt
+    else:
+        return None
 
-    if (mode == "copy"):
-        while(True):
+
+def parse_command(mode: str):
+    # 从main转到vrcAvatar
+    global CATEGORY
+
+    if (mode == "c"):
+        CATEGORY = get_category()
+        while (True):
             new_input = input("黏贴内容: ")
 
             if (len(new_input) > 20):
@@ -105,14 +107,16 @@ def parse(mode:str):
                 pyperclip.copy(id)
                 print("已复制: ", id, "\n\n")
 
-    elif (mode == "store"):
+    elif (mode == "s"):
+        CATEGORY = get_category()
         while (True):
             new_input = input("黏贴内容: ")
 
             if (len(new_input) > 20):
                 store_info(new_input)
 
-    elif (mode == "copystore"):
+    elif (mode == "cs"):
+        CATEGORY = get_category()
         while (True):
             new_input = input("黏贴内容: ")
 
@@ -122,4 +126,17 @@ def parse(mode:str):
                 pyperclip.copy(curr_id)
                 print("已复制: ", curr_id, "\n\n")
 
+    elif (mode == "x"):
+        pickle_file_path = AVATAR_PICKLE
+        export_xlsx_vrca(pickle_file_path)
+        print("导出xlsx完成")
 
+
+if __name__ == '__main__':
+    """瞎写的, 重新整理以后暂时还没有界面, 以后如果用得上再补
+    """
+    my_input = input("输入模式: \n[c]复制到剪贴板, [s]保存到pickle \n[cs]复制并黏贴, [x]导出pickle为xlsx\n")
+    if my_input not in ["c", "s", "cs", "x"]:
+        exit(0)
+    else:
+        parse_command(my_input)

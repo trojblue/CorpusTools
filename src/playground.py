@@ -1,5 +1,5 @@
 import re
-from qq_classes import *
+from handle_qq import *
 
 def try_list():
     lst = ["one", "two", "three"]
