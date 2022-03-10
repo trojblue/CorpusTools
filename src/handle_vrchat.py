@@ -128,7 +128,7 @@ def parse_command(mode: str):
 
     elif (mode == "x"):
         pickle_file_path = AVATAR_PICKLE
-        export_xlsx_vrca(pickle_file_path)
+        export_vrca_xlsx(pickle_file_path)
         print("导出xlsx完成")
 
 

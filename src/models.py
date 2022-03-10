@@ -1,3 +1,4 @@
+import os
 from typing import *
 import pyperclip
 import pickle
@@ -14,8 +15,14 @@ AVATAR_PICKLE = "../bin/avatar_entries.pickle"
 
 # ====数据相关的操作===
 
+def export_clipboard(s:str):
+    """复制string s到剪贴板
+    :param s: 要复制的string
+    """
+    pyperclip.copy(s)
 
-def export_xlsx_vrca(pickle_path:str, filename:str):
+
+def export_vrca_xlsx(pickle_path:str, filename:str):
     """输出存储的信息到xlsx
     :param pickle_path: "../bin/avatar_entries.pickle" (AVATAR_PICKLE)
     :param filename: xxx.xlsx
@@ -32,3 +39,14 @@ def export_xlsx_vrca(pickle_path:str, filename:str):
 
     df.to_excel(filename)
 
+
+def export_lines_txt(str_list: List[str], path: str):
+    """
+    :param str_list: List[string]
+    :param path: relative path (of OUTPUT_DIR)
+    """
+    full_save_path = os.path.join(OUTPUT_DIR, path)
+    f = open(full_save_path, "w")
+    for element in str_list:
+        f.write(element + "\n")
+    f.close()

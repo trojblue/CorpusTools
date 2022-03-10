@@ -3,4 +3,5 @@ data/
 bin/
 .idea/
 __pychache__/
+src/__pycache__/
 *.xlsx
