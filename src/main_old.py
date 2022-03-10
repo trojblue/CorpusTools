@@ -1,13 +1,11 @@
 import argparse
 import time, sys, schedule
-import handler_VRCAvatar
+import handle_vrchat
 
 def do_parse():
     """
     命令行读取参数
     """
-
-
     parser = argparse.ArgumentParser()
     action_group = parser.add_mutually_exclusive_group()
     action_group.add_argument("-c", "--copy", help="复制到剪贴板", action="store_true")
@@ -24,7 +22,7 @@ def do_parse():
     if args.copy:
 
         print("实时复制到剪贴板")
-        handler_VRCAvatar.parse(mode="copy")
+        handle_vrchat.parse(mode="copy")
 
 
     elif args.text:
@@ -34,20 +32,16 @@ def do_parse():
 
     elif args.store:
         print("存储到本地文件")
-        handler_VRCAvatar.parse(mode="store")
+        handle_vrchat.parse(mode="store")
 
     elif args.copystore:
         print("存储到本地文件, 并写入剪贴板")
-        handler_VRCAvatar.parse(mode="copystore")
+        handle_vrchat.parse(mode="copystore")
 
 
     else:
         print("没输入参数, 输入[-h]查看帮助")
         return 0
-
-
-
-
 
 
 

@@ -1,5 +1,5 @@
 import re
-from classes import *
+from qq_classes import *
 
 def try_list():
     lst = ["one", "two", "three"]
